@@ -16,7 +16,7 @@ menu__settings:
     - title: 'Blog'
       url: '/blog/'
     - title: 'About'
-      url: '/uravrgindian/'
+      url: '/uravrgindian'
     - title: 'Contact'
       url: '/contact/'
 
