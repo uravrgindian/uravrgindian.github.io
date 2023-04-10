@@ -1,0 +1,107 @@
+#-------------------------------
+# Site Settings
+title: uravrgindian
+logo: /images/logo.png
+logo1: /images/logo1.png
+description: uravrgindian- Pentester, Bug Bounty Hunter & Content Creator
+color_scheme: auto # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
+
+
+#-------------------------------
+# Navigation Settings
+menu__settings:
+  menu__items:
+    - title: 'Home'
+      url: '/'
+    - title: 'Blog'
+      url: '/blog/'
+    - title: 'About'
+      url: '/uravrgindian/'
+    - title: 'Contact'
+      url: '/contact/'
+
+ 
+
+
+#-------------------------------
+# Hero Settings
+hero:
+  enable: true
+  hero__title: Believe. Ignite. Achieve.
+  hero__description: Don’t limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve.
+  hero__image: # You can add hero image. For example '/images/06.jpg'
+
+
+#-------------------------------
+# Author Global Settings
+author:
+  author__name: uravrgindian
+  author__bio: I’m a Pentester, Bug Bounty Hunter and Content Creator.
+  author__avatar: /images/uravrgindian-hello.png
+
+
+#-------------------------------
+# Blog Section Settings
+blog__settings:
+  enable: true
+  blog__title: Latest Posts
+  blog__description:
+
+#-------------------------------
+# Author Section Settings
+author__section:
+  enable: true
+  author__section__title: Hello, my name is uravrgindian. 
+  author__section__description: I’m a Pentester, Bug Bounty Hunter and Content Creator.
+  aurhor__section__button__text: More About Me
+  aurhor__section__button__link: /uravrgindian
+  author__section__big__image: /images/big-front.jpg
+  author__section__small__image: /images/businesscard.jpg
+
+#-------------------------------
+# Footer Settings
+footer__description: Don’t limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve.
+
+
+# Social Links
+social:
+- {icon: "twitter", link: "https://twitter.com/uravrgindian"}
+- {icon: "linkedin", link: "https://www.linkedin.com/in/siddhartharora09/"}
+- {icon: "github", link: "https://github.com/uravrgindian"}
+- {icon: "instagram", link: "https://www.instagram.com/uravrgindian/"}
+
+
+# Example of adding a new link to the footer - {icon: "instagram", link: "https://instagram.com"}
+# Other icons can be found at https://ionicons.com/v4/
+
+
+# Footer Navigation
+footer__menu__settings:
+  menu__items:
+    - title: 'Home'
+      url: '/'
+    - title: 'About'
+      url: '/uravrgindian/'
+    - title: 'Contact'
+      url: '/contact/'
+
+
+
+#-------------------------------
+# Contact Settings
+contact:
+  email: your@email.com # Add your form_id
+  description: Feeling stuck? Need help? Contact Me. # Add a description of your form
+
+# NOTE
+# Mria theme comes with a contact form built-in. You can use this form with Formspree (https://formspree.io/) service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.
+
+
+#-------------------------------
+# Comment Section (Disqus)
+disqus-identifier: anvod-studio-test # Add your shortname for Disqus Comment. For example anvodstudio-demo
+
+
+#-------------------------------
+# Google Analytics
+google-analytics: # Add your GA Tracking Id

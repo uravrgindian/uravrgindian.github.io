@@ -1,0 +1,85 @@
+---
+layout: default
+---
+
+{% if page.cover %}
+<!-- begin hero image -->
+<div class="hero__image">
+  <div class="hero__image__inner">
+    <img class="lazy" data-src="{{page.cover}}" alt="{{page.name}}">
+  </div>
+</div>
+<!-- end hero image -->
+{% endif %}
+
+<!-- begin author -->
+<section class="author">
+
+  <div class="container">
+    {% assign post_count = site.posts | where: 'author', page.username %}
+
+    <div class="author__content1">
+      <div class="author__image"><img class="lazy" data-src="{{ page.image }}" alt="{{ page.name }}"></div>
+      <h1 class="author__name">{{ page.name }}</h1>
+      <div class="author__posts__count">{{ post_count.size }} {% if post_count.size < 2 %}Post{% else %}Posts{% endif %}</div>
+    </div>
+  <div class="author__content">  
+      <div class="author__info">
+      {% if page.location %}
+        <span class="author__social__item"><i class="ion ion-md-pin"></i> {{ page.location }}</span>
+      {% endif %}
+      {% if page.github %}
+        <a class="author__social__item" href="{{ page.github }}" aria-label="Github link"><i class="ion ion-logo-github"></i> Github</a>
+      {% endif %}
+      {% if page.twitter %}
+        <a class="author__social__item" href="{{ page.twitter }}" aria-label="Twitter link"><i class="ion ion-logo-twitter"></i> Twitter</a>
+      {% endif %}
+      {% if page.instagram %}
+        <a class="author__social__item" href="{{ page.instagram }}" aria-label="Instagram link"><i class="ion ion-logo-instagram"></i> Instagram</a>
+      {% endif %}
+      </div>
+
+      
+      <p style="text-align: left; width:49%; display: inline-block;"><u>Experience</u></p>
+      <p style="text-align: right; width:50%; display: inline-block;"><u></u></p>
+      <p style="text-align: left; width:49%; display: inline-block;"> Associate Security Consultant - Kroll Canada </p>
+      <p style="text-align: right; width:50%; display: inline-block;"> June 2022 - Present </p>
+      <ul style="text-align: left; width:80%; display: inline-block;">
+        <li>Associate in the Offensive Security practice working with clients in the Technology, Banking, Telecommunications, and Entertainment industry.</li>
+        <li>Participate in Kick Off Meetings to discuss assessment scope, requirements, deliverables and client expectations.</li>
+        <li>Perform Web Application, API (Rest & Graph QL), Infrastructure Security Assessments.</li>
+        <li>Authoring and presenting assessment reports to clients to discuss security findings and recommendations.</li>
+      </ul>
+      <p style="text-align: left; width:49%; display: inline-block;"> Cybersecurity Engineer [Co-op] - BDO Canada </p>
+      <p style="text-align: right; width:50%; display: inline-block;"> January 2022 - April 2022 </p>
+      <ul style="text-align: left; width:80%; display: inline-block;">
+        <li>Intern in the Offensive Security practice at BDO Canada.</li>
+      </ul>
+      <p style="margin-left: 0px;"><u>Skills</u></p>
+      <label for="WAPT" style="margin-left: 0px">Web Applicaiton Penetration Testing:</label>
+      <progress id="WAPT" value="90" max="100" style="accent-color: rgb(123, 124, 123);"> 90% </progress><br>
+      <label for="APT" style="margin-left: 0px">API Penetration Testing:</label>
+      <progress id="APT" value="80" max="100" style="accent-color: rgb(123, 124, 123);"> 80% </progress><br>
+      <label for="MAPT" style="margin-left: 0px">Mobile Applicaiton Penetration Testing (Android & iOS):</label>
+      <progress id="MAPT" value="30" max="100" style="accent-color: rgb(123, 124, 123);"> 30% </progress><br>
+      <label for="IENT" style="margin-left: 0px">Internal & External Network Penetration Testing:</label>
+      <progress id="IENT" value="50" max="100" style="accent-color: rgb(123, 124, 123);"> 50% </progress><br>
+      <label for="WPT" style="margin-left: 0px">Wireless Network Penetration Testing:</label>
+      <progress id="WPT" value="50" max="100" style="accent-color: rgb(123, 124, 123);"> 50% </progress><br>
+      <label for="AST" style="margin-right: 0px">Automated Security Tools:</label>
+      <progress id="AST" value="80" max="100" style="accent-color: rgb(123, 124, 123);"> 80% </progress><br>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="container animate">
+    <div class="row">
+      {% for post in post_count %}
+        {% include article.html %}
+      {% endfor %}
+    </div>
+  </div>
+
+</section>
+<!-- end author -->
